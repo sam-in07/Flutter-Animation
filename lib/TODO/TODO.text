@@ -1,0 +1,31 @@
+1. animations
+https://pub.dev/packages/animations/example
+
+2. flutter_animate (***)
+https://pub.dev/packages/flutter_animate
+
+3. simple_animations
+https://pub.dev/packages/simple_animations
+
+4. lottie (***)
+https://pub.dev/packages/lottie
+ fancy animation
+
+
+অ্যানিমেশনের ধরণ
+
+    - Implicit
+    - Explicit
+    AnimatedContainer
+    - Zoom in / Zoom Out
+    - fade In/ fade out
+    - slide In/ Slide Out
+    -
+
+
+5. Loading Animation (Used When API Called)
+https://pub.dev/packages/loading_animation_widget
+
+
+6. Shimmer
+https://pub.dev/packages/shimmer
