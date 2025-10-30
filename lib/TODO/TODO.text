@@ -14,8 +14,8 @@ https://pub.dev/packages/lottie
 
 অ্যানিমেশনের ধরণ
 
-    - Implicit
-    - Explicit
+    - Implicit - working auto
+    - Explicit -
     AnimatedContainer
     - Zoom in / Zoom Out
     - fade In/ fade out

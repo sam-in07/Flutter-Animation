@@ -17,3 +17,16 @@ Lottie.network(
 
 
 [flutter_animate_Check_cmts ](lib/Screens/Part2.dart) 
+
+
+[Togggle Animation](lib/Screens/Part3.dart)
+
+[Swap ](lib/Screens/Part4.dart)  
+
+
+[Implicit Creating Animation](lib/Screens/Part5.dart)\
+
+[API Calling Animation](lib/Screens/Part6.dart) 
+⤵️
+Shimmer , loader ect. 
+Shimmer jonno alada kore box banie nibe 

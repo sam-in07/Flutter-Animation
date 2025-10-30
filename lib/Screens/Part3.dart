@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
 
+import 'Part4.dart';
+
 class page_three extends StatefulWidget {
   const page_three({super.key});
 
@@ -16,10 +18,16 @@ class _page_threeState extends State<page_three> {
       body: Column(
         children: [
           Center(
-            child: Text('Hello Page Two' ,style:
-            const TextStyle(fontSize: 32), ).
-            animate().fade(duration:100.ms).
-            scale(delay: 1000.ms),
+              child: Text("Hello Animation").animate().toggle(
+                  duration: 10.seconds,
+                  builder: (_,value,_){
+                    return Text(
+                      value? "01":"02",
+                      style: TextStyle(fontSize: 100),
+                    );
+                  }
+              )
+
           ),
           SizedBox(height: 4,) ,
           TextButton(
@@ -27,11 +35,11 @@ class _page_threeState extends State<page_three> {
               // Navigate to Part2 page
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => page_three()),
+                MaterialPageRoute(builder: (context) => page_four()),
               );
             },
             child: Text(
-              'Go to Page Two',
+              'Go to Page f',
               style: TextStyle(fontSize: 18),
             ),
           ),

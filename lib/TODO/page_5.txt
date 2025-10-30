@@ -1,25 +1,44 @@
+For Implicit We use StatelessWidget
+
+
+
+
+
+
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:lottie/lottie.dart';
-
-import 'Part6.dart';
-
-class page_five extends StatefulWidget {
 
 
-  @override
-  State<page_five> createState() => _page_fiveState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _page_fiveState extends State<page_five> {
- // const page_five({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HelloWorld(),
+    );
+  }
+}
+
+class HelloWorld extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState()=>HelloWorldState();
+}
+
+
+class HelloWorldState extends State<HelloWorld>{
   bool isBig=false;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Flutter Animation"),),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedContainer(
               duration: Duration(seconds: 1),
@@ -29,21 +48,7 @@ class _page_fiveState extends State<page_five> {
               alignment: Alignment.center,
               child: Text("ABC",style: TextStyle(fontSize: 20,color:Colors.white),),
             ),
-            SizedBox(height: 4,) ,
-            TextButton(
-              onPressed: () {
-                // Navigate to Part2 page
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => page_six()),
-                );
-              },
-              child: Text(
-                'Go to Page Two',
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-            SizedBox(height: 4,) ,
+            SizedBox(height: 40),
             ElevatedButton(
                 onPressed: (){
                   setState(() {
@@ -52,14 +57,10 @@ class _page_fiveState extends State<page_five> {
                 },
                 child: Text("Click")
             )
-
-
-
           ],
         ),
       ),
-
-
     );
   }
 }
+

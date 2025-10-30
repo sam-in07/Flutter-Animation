@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
+import 'package:shimmer/shimmer.dart';
 
 class page_six extends StatefulWidget {
   const page_six({super.key});
@@ -13,29 +14,22 @@ class _page_sixState extends State<page_six> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Center(
-            child: Text('Hello Page Two' ,style:
-            const TextStyle(fontSize: 32), ).
-            animate().fade(duration:100.ms).
-            scale(delay: 1000.ms),
-          ),
-          SizedBox(height: 4,) ,
-          TextButton(
-            onPressed: () {
-              // Navigate to Part2 page
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => page_six()),
-              );
-            },
-            child: Text(
-              'Go to Page Two',
-              style: TextStyle(fontSize: 18),
+      body: Center(
+        child: Column(
+          children: [
+            Shimmer.fromColors(
+                baseColor: Colors.grey,
+                highlightColor: Colors.white,
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  color: Colors.white,
+                )
             ),
-          ),
-        ],
+
+
+          ],
+        ),
       ),
 
 
