@@ -14,3 +14,6 @@ A new Flutter project.
 Lottie.network(
 'https://raw.githubusercontent.com/xvrh/lottie-flutter/master/example/assets/Mobilo/A.json',
 ),
+
+
+[flutter_animate_Check_cmts ](lib/Screens/Part2.dart) 

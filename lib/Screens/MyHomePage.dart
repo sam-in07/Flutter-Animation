@@ -15,17 +15,20 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+
         children: [
+          SizedBox(height: 200,) ,
           Center(
             child: Lottie.network(
               'https://raw.githubusercontent.com/xvrh/lottie-flutter/master/example/assets/Mobilo/A.json',
             ),
-
-
-
-
-
           ),
+          SizedBox(height: 4,) ,
+          // Center(
+          //   child: Lottie.network(
+          //     'https://lottiefiles.com/free-animation/arrows-right-wY3BGeVzmw',
+          //   ),
+          // ),
           SizedBox(height: 4,) ,
           TextButton(
             onPressed: () {
